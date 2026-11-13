@@ -1,0 +1,116 @@
+STUNT DOUBLE
+End User License Agreement
+
+Copyright (c) 2026 Ari Shapiro. All rights reserved.
+
+Stunt Double is built with DANCE (Dynamic ANimation and Control Environment), which is governed
+by its own license terms.
+
+PLEASE READ THIS AGREEMENT BEFORE INSTALLING OR USING STUNT DOUBLE. BY INSTALLING, COPYING OR
+USING IT, YOU AGREE TO THESE TERMS. IF YOU DO NOT AGREE, DO NOT INSTALL OR USE IT.
+
+1. DEFINITIONS
+
+"Software" means the Stunt Double program in executable (binary) form, its installer, and the
+scripts, tutorials, documentation, models and other files distributed with it, except the
+Third-Party Components.
+
+"Third-Party Components" means the software and data made by others that is distributed with
+the Software and listed in THIRD_PARTY_NOTICES.txt.
+
+"Output" means anything you create with the Software: images, renders, videos, animation,
+motion and pose data, simulation results, scenes, scripts and other files.
+
+"Licensor" means Ari Shapiro, the author of the Software.
+
+2. LICENSE GRANT
+
+The Licensor grants you a free, worldwide, non-exclusive, non-transferable license to install and
+use the Software on any number of computers, for any lawful purpose, personal or commercial,
+including in paid work for yourself, your employer or your clients.
+
+You may also change the scripts, tutorials and other plain-text files distributed with the
+Software and use the changed versions with it.
+
+3. YOUR OUTPUT
+
+Your Output belongs to you. The Licensor claims no ownership of it and places no restriction on
+how you use, sell or license it, except where it is made from material that carries its own
+license (see section 5). You alone are responsible for your Output and how you use it.
+
+4. RESTRICTIONS
+
+Except as this agreement allows, or as the law allows despite this restriction, you may not:
+
+  (a) sell, rent, lease or sublicense the Software, or charge for it;
+  (b) distribute the Software, other than the unmodified installer, free of charge, with this
+      agreement and THIRD_PARTY_NOTICES.txt included;
+  (c) modify, adapt, translate or create derivative works of the Software's executables and
+      libraries;
+  (d) reverse engineer, decompile or disassemble the Software's executables and libraries;
+  (e) remove or change any copyright, trademark or license notice in the Software; or
+  (f) use the Software to break any law, or to infringe anyone's rights.
+
+Plugins you write for the Software are your own, and you may license them as you wish.
+
+5. THIRD-PARTY COMPONENTS AND SAMPLE DATA
+
+The Third-Party Components are licensed to you under their own licenses, listed with them in
+THIRD_PARTY_NOTICES.txt, and not under this agreement. Nothing in this agreement limits the
+rights those licenses give you.
+
+Some sample motion data distributed with the Software can only be used noncommercially. In
+particular, the clips from the Bandai Namco Research Motion Dataset (in
+data/motions/bandai-namco/ and scripts/tutorials/tutorial27data/) are licensed under Creative
+Commons Attribution-NonCommercial 4.0. Output made from them, including any motion retargeted
+from them, may only be used noncommercially and with the attribution that license requires.
+Section 3 does not change this. For commercial work, use your own motion capture, or motion
+licensed for commercial use.
+
+6. OWNERSHIP
+
+The Software is licensed, not sold. The Licensor keeps all rights, title and interest in the
+Software, including all copies, and all rights not expressly granted to you are reserved.
+
+7. UPDATES AND FEEDBACK
+
+The Licensor has no obligation to provide updates, support or maintenance. Any update the
+Licensor provides is covered by this agreement unless it comes with its own. If you send the
+Licensor suggestions or feedback, the Licensor may use them without obligation to you.
+
+8. NO WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING WITHOUT LIMITATION THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE, ACCURACY AND NON-INFRINGEMENT. THE SOFTWARE SIMULATES PHYSICS APPROXIMATELY.
+ITS RESULTS, INCLUDING ITS DAMAGE METER, ARE FOR ANIMATION AND VISUALIZATION ONLY. DO NOT RELY ON
+THEM TO PLAN, ASSESS OR CARRY OUT ANY REAL STUNT, FALL OR ACTIVITY, OR FOR ANY SAFETY, MEDICAL OR
+ENGINEERING DECISION. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE SOFTWARE IS WITH
+YOU.
+
+9. LIMITATION OF LIABILITY
+
+TO THE FULLEST EXTENT PERMITTED BY LAW, IN NO EVENT WILL THE LICENSOR OR ANY CONTRIBUTOR BE LIABLE
+FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY OR PUNITIVE DAMAGES, OR FOR ANY
+LOSS OF PROFITS, REVENUE, DATA, USE OR GOODWILL, OR FOR PERSONAL INJURY OR PROPERTY DAMAGE,
+ARISING OUT OF OR RELATING TO THE SOFTWARE OR THIS AGREEMENT, HOWEVER CAUSED AND UNDER ANY THEORY
+OF LIABILITY, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE LICENSOR'S TOTAL LIABILITY
+FOR ALL CLAIMS WILL NOT EXCEED THE AMOUNT YOU PAID FOR THE SOFTWARE, OR US $10 IF YOU PAID
+NOTHING. Some jurisdictions do not allow these exclusions or limits, so some of them may not
+apply to you.
+
+10. TERMINATION
+
+This agreement is effective until terminated. It ends automatically if you break any of its
+terms. When it ends, you must stop using the Software and delete all copies of it. Sections 3,
+5, 6, 8, 9, 10 and 11 survive termination, and Output you made before termination remains yours.
+
+11. GENERAL
+
+This agreement is governed by the laws of the State of California, USA, without regard to its
+conflict-of-laws rules. If any part of it is found unenforceable, that part will be enforced as
+far as possible and the rest will remain in effect. Failing to enforce any part is not a waiver
+of it. This is the entire agreement between you and the Licensor about the Software, and it
+replaces any earlier one. You must comply with all export laws that apply to the Software.
+
+Questions about this agreement: Ari Shapiro   ariyshapiro@gmail.com
