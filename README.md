@@ -7,7 +7,7 @@
 Direct a simulated character through falls, swings, hits and landings. Then send the motion,
 camera and control passes to Blender, Unity, Unreal or a video model for the final look.
 
-### [⬇ Download for Windows](https://github.com/arishapiro/StuntDouble/releases/latest)
+### [⬇ Download for Windows](https://github.com/arishapiro/StuntDouble/releases/latest) · [Read the tutorials](docs/tutorials/README.md)
 
 Free to use, including for commercial work. What you make with it is yours.
 
@@ -63,8 +63,9 @@ may stop it the first time. Click **More info**, then **Run anyway**.
 **Requirements:** Windows 10 or 11, 64-bit, and a graphics card with OpenGL. Python 3.14
 and everything else it needs are included (about 42 MB to download).
 
-**To learn it:** the Start menu has the tutorial scenes, a step-by-step tutorials guide
-(Markdown and PDF, with screenshots) and the manual.
+**To learn it:** work through the [step-by-step tutorials](docs/tutorials/README.md), here
+or from the Start menu (Markdown and PDF, with screenshots). The Start menu also has the
+tutorial scenes and the manual.
 
 **Updates:** once a day, Stunt Double checks here for a new version and tells you if there is
 one. It sends nothing about you or your computer, and never installs anything by itself. To turn
