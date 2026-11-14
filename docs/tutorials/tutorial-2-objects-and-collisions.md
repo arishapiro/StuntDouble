@@ -1,4 +1,4 @@
-# Stunt Double Tutorial 2: Balls and Walls
+# Stunt Double Tutorial 2: Objects and Collisions
 
 Nov 9, 2026 · @Ari
 
@@ -11,7 +11,7 @@ It assumes you have done Tutorial 1. You will use the same panels: Joint and Tra
 1. Load **Scripts > tutorials > Tutorial\_01\_Ragdoll**.
 2. Choose **Scripts > basics > Create\_ball**. A 5 kg red ball, 0.15 m in radius, appears on the ground 1.5 m in front of him.
 
-![Scripts > basics menu with Create_ball and Create_wall outlined](images/tutorial-2-balls-and-walls/figure-01.png)
+![Scripts > basics menu with Create_ball and Create_wall outlined](images/tutorial-2-objects-and-collisions/figure-01.png)
 
 *Figure 1. The Scripts > basics menu. Create\_ball adds a ball; Create\_wall adds a wall.*
 
@@ -21,7 +21,7 @@ Both scripts work in any scene and can be run more than once. A second ball is n
 
 The ball is a one-part "skeleton": its only joint is **Ball**, a free joint like the Hip. So its tab is the same panel you used in Tutorial 1, and everything you learned there works on it.
 
-![A red ball on the ground in front of the character; ball in the Plugins tree and its tab outlined](images/tutorial-2-balls-and-walls/figure-02.png)
+![A red ball on the ground in front of the character; ball in the Plugins tree and its tab outlined](images/tutorial-2-objects-and-collisions/figure-02.png)
 
 *Figure 2. The ball in the Plugins tree, with its own tab.*
 
@@ -31,7 +31,7 @@ The ball is a one-part "skeleton": its only joint is **Ball**, a free joint like
 2. Translate X, Y and Z are the centre of the ball, in metres. It starts at 0, 0.15 and 1.5: on the ground, in front of him.
 3. Type new values to move it, for example Translate Y `2` to hold it 2 m up. Press Play and it drops to the ground.
 
-![Ball joint selected; Translate 0, 0.15, 1.5](images/tutorial-2-balls-and-walls/figure-03.png)
+![Ball joint selected; Translate 0, 0.15, 1.5](images/tutorial-2-objects-and-collisions/figure-03.png)
 
 *Figure 3. The Ball joint: Translate is where the ball's centre is.*
 
@@ -41,7 +41,7 @@ The ball is a one-part "skeleton": its only joint is **Ball**, a free joint like
 2. Type `20` in **Mass** (kilograms) and press Enter.
 3. Set the three **Moments** to `0.18`. Moments are how hard the ball is to spin. For a solid ball they are 0.4 × mass × radius², so 0.4 × 20 × 0.15² = 0.18.
 
-![Physical Properties with Mass 20 and Moments 0.18](images/tutorial-2-balls-and-walls/figure-04.png)
+![Physical Properties with Mass 20 and Moments 0.18](images/tutorial-2-objects-and-collisions/figure-04.png)
 
 *Figure 4. A 20 kg ball, its moments set to match.*
 
@@ -61,7 +61,7 @@ Why mid-air? Standing, he collapses on his own within a second, whether or not a
 4. Click **Velocities**. Set **Linear Vel Z** to `-10`: 10 m/s straight at him. (He faces +Z, so -Z is toward him.)
 5. Tick **COM arc**. The ball's arc runs through his chest and on behind him. Click **Set and Close**.
 
-![Side view: the character raised, the ball level with his chest, its orange arc through him](images/tutorial-2-balls-and-walls/figure-05.png)
+![Side view: the character raised, the ball level with his chest, its orange arc through him](images/tutorial-2-objects-and-collisions/figure-05.png)
 
 *Figure 5. Seen side-on: the ball's COM arc runs through his chest.*
 
@@ -69,7 +69,7 @@ Why mid-air? Standing, he collapses on his own within a second, whether or not a
 
 Press **Play**. The ball hits him about 0.15 s in, folds him around it and carries him backward as he falls.
 
-![The ball in his middle, the character folded around it in the air](images/tutorial-2-balls-and-walls/figure-06.png)
+![The ball in his middle, the character folded around it in the air](images/tutorial-2-objects-and-collisions/figure-06.png)
 
 *Figure 6. The 20 kg ball folds him in half in mid-air.*
 
@@ -83,11 +83,11 @@ A wall is a box fixed in place: he and the ball hit it, but it never moves.
 2. Choose **Scripts > basics > Create\_wall**. A wall 4 m wide, 4 m tall and 0.3 m thick appears 1.5 m behind him, and its tab opens.
 3. Press **Play**. The ball carries him back into the wall, and he slides down it.
 
-![A grey wall behind the character, and the wall's tab](images/tutorial-2-balls-and-walls/figure-07.png)
+![A grey wall behind the character, and the wall's tab](images/tutorial-2-objects-and-collisions/figure-07.png)
 
 *Figure 7. The wall and its tab: Translate places its centre, Scale sets its size.*
 
-![The character pressed against the wall by the ball](images/tutorial-2-balls-and-walls/figure-08.png)
+![The character pressed against the wall by the ball](images/tutorial-2-objects-and-collisions/figure-08.png)
 
 *Figure 8. Pinned against the wall by the ball.*
 
@@ -111,13 +111,13 @@ Now the ball stays still and he lands on it. Lay him flat on his back, 1.5 m up,
 4. On the **skeleton** tab, choose **Hip**. Set **Rotate X** to `-90` and **Translate Y** to `1.5`. He lies flat on his back, 1.5 m up, head toward the wall.
 5. Press **Play**.
 
-![The character lying flat in the air above the ball](images/tutorial-2-balls-and-walls/figure-09.png)
+![The character lying flat in the air above the ball](images/tutorial-2-objects-and-collisions/figure-09.png)
 
 *Figure 9. Lying flat 1.5 m up, the ball under his upper back.*
 
 His back lands across the ball. It props his upper body up, and he stays draped back over it.
 
-![His back landing across the ball](images/tutorial-2-balls-and-walls/figure-10.png)
+![His back landing across the ball](images/tutorial-2-objects-and-collisions/figure-10.png)
 
 *Figure 10. Landing across the ball.*
 
@@ -143,7 +143,7 @@ A skeleton attachment welds a body part to a part of another object. Here you we
 
 The weld holds the hand and the ball the way they are at the start, so place the ball where his hand should hold it before you press Play.
 
-![The ball at his left hand with its arc pointing up; Attachments window with Left_Hand, ball, Ball](images/tutorial-2-balls-and-walls/figure-11.png)
+![The ball at his left hand with its arc pointing up; Attachments window with Left_Hand, ball, Ball](images/tutorial-2-objects-and-collisions/figure-11.png)
 
 *Figure 11. The ball at his left hand, attached as a Skeleton Attachment, its COM arc pointing up and out.*
 
@@ -153,7 +153,7 @@ The weld holds the hand and the ball the way they are at the start, so place the
 2. Tick **COM arc** to see where the ball wants to go, then **Set and Close**.
 3. Press **Play**. The ball lifts him off his feet by the arm and swings him over, and he comes down head-first beside it.
 
-![Two frames: lifted off his feet by the ball, then upside down](images/tutorial-2-balls-and-walls/figure-12.png)
+![Two frames: lifted off his feet by the ball, then upside down](images/tutorial-2-objects-and-collisions/figure-12.png)
 
 *Figure 12. Yanked off his feet (left) and flipped over (right).*
 
