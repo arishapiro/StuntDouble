@@ -15,12 +15,21 @@ Free to use, including for commercial work. What you make with it is yours.
 
 ## What it does
 
-- **Physically simulated characters.** A full-body skeleton driven by physics (MuJoCo), with
-  joint limits, collisions and controllers that balance, fall, jump, walk, get up and reach.
-- **Stunts.** Falls from heights, down stairs and onto tables; car crashes with and without
-  seat belts; wrecking balls, trapezes, rope swings and monkey bars; safety nets and crash mats.
-- **A damage meter.** Every blow is measured, part by part, so you can compare a fall limp
-  against a fall braced, or a bare floor against a crash mat.
+Under the hood is a physics simulation. What Stunt Double adds is everything a stunt needs on
+top of it:
+
+- **Characters that act, not just ragdolls that fall.** A full-body skeleton with joint limits
+  and collisions, and controllers that balance, walk, jump, fall, get up, kip up and reach, or
+  windmill the arms in the air to turn and land flat. A master controller switches between
+  them, and learned controllers track motion capture and fall well.
+- **Stunts ready to run.** More than 40 tutorial scenes, each a whole setup: hit by a car with
+  and without a seat belt, down the stairs, onto a table, an elevator falling down its shaft, a
+  wrecking ball, a trapeze, monkey bars, a rope swing, a heavy bag, a safety net, a crash mat.
+  Windshields break, hands grip bars, and anything can be fastened to anything.
+- **A score for every take.** The damage meter measures every blow, part by part, and how far
+  each joint was forced past its limits, so takes can be compared: the same tumbling fall
+  scores 2700 limp onto bare ground, 52 limp onto a safety net, and 6.1 windmilling in the air
+  to land flat on the net.
 - **Motion capture.** Load BVH or ASF/AMC motion (CMU, Mixamo and others), retarget it onto the
   character, and let physics take over when something hits it.
 - **Export.** FBX for Blender, Unity and Unreal, with standard joint names (Mixamo, the Unreal
@@ -30,8 +39,9 @@ Free to use, including for commercial work. What you make with it is yours.
   models such as Wan VACE take, to turn a simulated stunt into a photorealistic shot.
 - **Movies.** Render H.264 MP4, PNG frames or GIFs at any size and frame rate, with no other
   software needed.
-- **Python scripting.** Every scene is a Python script you can change, with more than 40 tutorial
-  scenes to start from.
+- **Hands on.** Every scene is a Python script you can change, timed events run on a timeline,
+  each controller has a panel of settings, and Ctrl+drag in the view grabs any part of the body
+  and throws it.
 
 | | |
 |---|---|
@@ -50,8 +60,8 @@ Free to use, including for commercial work. What you make with it is yours.
 **"Windows protected your PC"?** The installer isn't code-signed yet, so Windows SmartScreen
 may stop it the first time. Click **More info**, then **Run anyway**.
 
-**Requirements:** Windows 10 or 11, 64-bit, and a graphics card with OpenGL. Python 3.14,
-MuJoCo and everything else it needs are included (about 42 MB to download).
+**Requirements:** Windows 10 or 11, 64-bit, and a graphics card with OpenGL. Python 3.14
+and everything else it needs are included (about 42 MB to download).
 
 **To learn it:** the Start menu has the tutorial scenes, a step-by-step tutorials guide
 (Markdown and PDF, with screenshots) and the manual.
