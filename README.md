@@ -57,11 +57,17 @@ top of it:
 2. Run it. It installs for your user account, so it doesn't need administrator rights.
 3. Start **Stunt Double** from the Start menu, then open a scene from **Scripts > tutorials**.
 
-**"Windows protected your PC"?** The installer isn't code-signed yet, so Windows SmartScreen
-may stop it the first time. Click **More info**, then **Run anyway**.
+**Rather not install it?** Download `StuntDouble-<version>-win64.zip` instead, right-click
+it, choose **Extract All**, and run `Stunt Double\bin64\dance.exe`. Extract it first (it won't
+run from inside the zip), and somewhere you can write to, such as Desktop, Documents or
+Downloads, not Program Files: Stunt Double keeps its settings and recordings in its own folder.
+
+**"Windows protected your PC"?** Stunt Double isn't code-signed, so Windows SmartScreen may
+stop it the first time, whether that's the installer or `dance.exe` from the zip. Click
+**More info**, then **Run anyway**.
 
 **Requirements:** Windows 10 or 11, 64-bit, and a graphics card with OpenGL. Python 3.14
-and everything else it needs are included (about 42 MB to download).
+and everything else it needs are included (about 43 MB to download, or 57 MB for the zip).
 
 **To learn it:** work through the [step-by-step tutorials](docs/tutorials/README.md), here
 or from the Start menu (Markdown and PDF, with screenshots). The Start menu also has the
@@ -71,7 +77,8 @@ tutorial scenes and the manual.
 one. It sends nothing about you or your computer, and never installs anything by itself. To turn
 it off, uncheck **Help > Check for updates automatically**.
 
-**To uninstall:** Settings > Apps, or **Uninstall Stunt Double** in the Start menu.
+**To uninstall:** Settings > Apps, or **Uninstall Stunt Double** in the Start menu. From the
+zip, delete its folder.
 
 ## Feedback
 
