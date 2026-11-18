@@ -7,7 +7,7 @@
 Direct a simulated character through falls, swings, hits and landings. Then send the motion,
 camera and control passes to Blender, Unity, Unreal or a video model for the final look.
 
-### [⬇ Download for Windows](https://github.com/arishapiro/StuntDouble/releases/latest) · [Read the tutorials](docs/tutorials/README.md)
+### [⬇ Download for Windows, macOS or Linux](https://github.com/arishapiro/StuntDouble/releases/latest) · [Read the tutorials](docs/tutorials/README.md)
 
 Free to use, including for commercial work. What you make with it is yours.
 
@@ -52,33 +52,71 @@ top of it:
 
 ## Install
 
-1. Download `StuntDouble-<version>-setup.exe` from the
-   [latest release](https://github.com/arishapiro/StuntDouble/releases/latest).
-2. Run it. It installs for your user account, so it doesn't need administrator rights.
-3. Start **Stunt Double** from the Start menu, then open a scene from **Scripts > tutorials**.
+Download from the [latest release](https://github.com/arishapiro/StuntDouble/releases/latest):
+the installer or zip for Windows, the `.dmg` for macOS, or the AppImage for Linux. They all have
+the same program inside, with Python 3.14 and everything else it needs. Then open a scene from
+**Scripts > tutorials**.
 
-**Rather not install it?** Download `StuntDouble-<version>-win64.zip` instead, right-click
-it, choose **Extract All**, and run `Stunt Double\bin64\dance.exe`. Extract it first (it won't
-run from inside the zip), and somewhere you can write to, such as Desktop, Documents or
-Downloads, not Program Files: Stunt Double keeps its settings and recordings in its own folder.
+**Requirements:** a graphics card with OpenGL, and one of:
+
+- Windows 10 or 11, 64-bit
+- an Intel Mac with macOS 11 (Big Sur) or later. Apple Silicon Macs should run it through
+  Rosetta 2, though that hasn't been tested yet.
+- 64-bit Linux from 2022 or later (Ubuntu 22.04 or later, and similar)
+
+### Windows
+
+1. Download `StuntDouble-<version>-setup.exe` (about 59 MB).
+2. Run it. It installs for your user account, so it doesn't need administrator rights.
+3. Start **Stunt Double** from the Start menu.
+
+**Rather not install it?** Download `StuntDouble-<version>-win64.zip` (about 75 MB) instead,
+right-click it, choose **Extract All**, and run `Stunt Double\bin64\dance.exe`. Extract it first
+(it won't run from inside the zip), and somewhere you can write to, such as Desktop, Documents
+or Downloads, not Program Files: Stunt Double keeps its settings and recordings in its own folder.
 
 **"Windows protected your PC"?** Stunt Double isn't code-signed, so Windows SmartScreen may
 stop it the first time, whether that's the installer or `dance.exe` from the zip. Click
 **More info**, then **Run anyway**.
 
-**Requirements:** Windows 10 or 11, 64-bit, and a graphics card with OpenGL. Python 3.14
-and everything else it needs are included (about 43 MB to download, or 57 MB for the zip).
+**To uninstall:** Settings > Apps, or **Uninstall Stunt Double** in the Start menu. From the
+zip, delete its folder.
+
+### macOS
+
+1. Download `StuntDouble-<version>-macOS.dmg` (about 89 MB).
+2. Open it and drag **Stunt Double** onto **Applications**.
+3. Stunt Double isn't signed by Apple, so the first time, right-click it in Applications and
+   choose **Open**, then **Open** again. If macOS only offers to move it to the Trash, open
+   **System Settings > Privacy & Security** and click **Open Anyway** next to Stunt Double.
+
+On its first run it copies itself to `~/Library/Application Support/StuntDouble/<version>` and
+runs from there, since Stunt Double keeps its settings and recordings in its own folder.
+
+**To uninstall:** drag it from Applications to the Trash, and delete
+`~/Library/Application Support/StuntDouble`.
+
+### Linux
+
+1. Download `StuntDouble-<version>-x86_64.AppImage` (about 81 MB).
+2. Make it executable and run it:
+   `chmod +x StuntDouble-<version>-x86_64.AppImage`, then `./StuntDouble-<version>-x86_64.AppImage`.
+
+On its first run it copies itself to `~/.local/share/StuntDouble/<version>` and runs from
+there. If it won't start, install FUSE 2 (`sudo apt install libfuse2t64`, or `libfuse2` on
+Ubuntu 22.04), or run it with `--appimage-extract-and-run`.
+
+**To uninstall:** delete the file and `~/.local/share/StuntDouble`.
+
+### Then
 
 **To learn it:** work through the [step-by-step tutorials](docs/tutorials/README.md), here
-or from the Start menu (Markdown and PDF, with screenshots). The Start menu also has the
-tutorial scenes and the manual.
+or in the program's `docs/tutorials` folder (Markdown and PDF, with screenshots). On Windows
+the Start menu also has the tutorial scenes and the manual.
 
 **Updates:** once a day, Stunt Double checks here for a new version and tells you if there is
 one. It sends nothing about you or your computer, and never installs anything by itself. To turn
 it off, uncheck **Help > Check for updates automatically**.
-
-**To uninstall:** Settings > Apps, or **Uninstall Stunt Double** in the Start menu. From the
-zip, delete its folder.
 
 ## Feedback
 
