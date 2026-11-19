@@ -173,3 +173,14 @@ The attachment stays until you remove it: on the skeleton's Attachments window, 
 | Ball in his hand | skeleton tab > Attachments > Skeleton Attachments: ball, Body: Ball |
 
 Both scripts take settings when run from your own script, set before loading it: `ballMass`, `ballRadius`, `ballPosition`, `ballMaterial`, and `wallSize`, `wallPosition`, `wallMaterial`. For example, `ballMass = 50` and then `dance.load(dance.dancedir() + "/scripts/basics/Create_ball.py")`.
+
+**Furniture and balls.** **Scripts > props** has 24 pieces of furniture and four balls (soccerBall, volleyball, baseball, football: their real sizes and weights, hollow, and bouncing as high as the real ones): pick one and it stands in a row 1.5 m in front of him, beside the others you've added (in an empty scene it brings the ground and gravity with it). From a script, Create\_prop adds any of the 24 (data/models/props/props.txt lists them: chairs, tables, a desk, a sofa, a bed, a bookcase, a fridge, a washing machine, boxes...), each a model that collides as a few boxes fitted to it, weighing what the real thing would:
+
+```python
+propName = "table"
+propPosition = (0.0, 0.0, 1.35)    # where its base stands: y 0 is the floor
+propYaw = 30.0                     # degrees about the vertical
+dance.load(dance.dancedir() + "/scripts/basics/Create_prop.py")
+```
+
+`propMass` (kg) or `propDensity` (kg/m³) change its weight, `propFriction` how it slides (0.6 unless set). Its inertia and center of mass are worked out from its boxes. Change its mass later, in its panel or with `dance.system("table", "link", "Prop", "mass", 40)`, and its inertia goes with it. A ball's bounce is its MuJoCo simulator's: `dance.simulator("soccerBallsim", "bounce", 0.8)` (0 dead, 1 as high as it fell from). Balls don't slow as they roll (MuJoCo's contacts here have no rolling resistance): one knocked away keeps rolling. Don't place two props, or a prop and the character, overlapping: they start inside each other and fly apart. Your own model can be a prop too: `scripts/tools/props/build_props.py` fits boxes to any OBJ.
